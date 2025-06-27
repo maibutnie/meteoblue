@@ -1,0 +1,71 @@
+:root {
+    /* Colors */
+    --border-color-cards: #d1d5db;
+    --yellow-900: #c69e1f;
+    --blue-300: #124673;
+    --blue-400: #12446e;
+    --alert-red: #e05252;
+    --grey-120: #d9d9d9;
+    --coral: #d88d8d;
+    --blue-200: #2a577e;
+    --blue-600: #0c304e;
+    --grey-200: #eeeeee;
+    --blue-500: #194060;
+    --blue-50: #a3cef5;
+    --grey-100: #f8f8f8;
+    --grey-500: #444444;
+    --grey-300: #bababa;
+    --grey-400: #747474;
+    --blue-100: #1e6db3;
+    --yellow-400: #f8c933;
+    --grey-150: #e6e6e6;
+    --yellow-100: #ffdb69;
+    --pink: #ff3399;
+    --blue-800: #0c2031;
+    --grey-600: #2e2e2e;
+    --blue-900: #0a1220;
+    --secondary-website: #727c8d;
+    --bg: #f3f6f9;
+    --fill: #f8fafc;
+    --white: #ffffff;
+
+    /* Transparent colors */
+    --transparent-fill-95: #124673f2;
+    --separator-stroke: #bababa1a;
+    --presentation-stroke: #a3b4c2e6;
+    --transparent-50: #1e6db380;
+    --transparent-dark-50: #264f7380;
+    --secondary-white: #FFFFFFE5;
+    --blue-transparent-bg: #a3cef533;
+    --transparent-white-20: #ffffff33;
+    --cookie-bg: #0000000d;
+
+    /* 15% opacity colors */
+    --blue-15: #a3cef526;
+    --yellow-15: #f7da9226;
+    --green-15: #b2f5a326;
+    --pink-15: #f4a3f526;
+    --coral-15: #f7a9aa26;
+
+    /* Aliases */
+    --stroke: var(--separator-stroke);
+
+    /* Text-size styles */
+    --header-0: 72px;
+    --header-1: 64px;
+    --header-2: 44px;
+    --header-3: 32px;
+    --main--l: 24px;
+    --main--m: 20px;
+    --main--s: 16px;
+    --main--x-s: 14px;
+    --header-12: 12px;
+
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+    /* Effect styles */
+    --shadow-vibrant: 0px 2px 10px rgba(18, 70, 115, 0.25);
+    --shadow-stroke: 0px 0px 2px rgba(18, 70, 115, 0.1);
+    --shadow-default: 0px 2px 10px rgba(12, 32, 49, 0.05);
+    --small--b-g--blur: ;
+}

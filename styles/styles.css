@@ -1,0 +1,142 @@
+@import './variables.css';
+
+body,
+input,
+button,
+textarea,
+select {
+    font-family: inherit;
+}
+
+body > * {
+    box-sizing: border-box;
+    padding: 0 165px;
+}
+
+a, h1, h2, h3, p {
+    font-weight: normal;
+    line-height: 140%;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Font Sizes */
+.header-0 {
+    font-size: var(--header-0);
+}
+
+.header-1 {
+    font-size: var(--header-1);
+}
+
+.header-2 {
+    font-size: var(--header-2) !important;
+}
+
+.header-3 {
+    font-size: var(--header-3);
+}
+
+.main--l {
+    font-size: var(--main--l);
+}
+
+.main--m {
+    font-size: var(--main--m);
+}
+
+.main--s {
+    font-size: var(--main--s);
+}
+
+.main--x-s {
+    font-size: var(--main--x-s);
+}
+
+.header-12 {
+    font-size: var(--header-12);
+}
+
+/* Font Weights */
+
+.semibold {
+    font-weight: 600;
+}
+
+/* Colors */
+
+.white {
+    color: var(--white);
+}
+
+.secondary-white {
+    color: var(--secondary-white);
+}
+
+.light-blue {
+    color: var(--blue-50);
+}
+
+.dark-blue {
+    color: var(--blue-800);
+}
+
+.secondary-website {
+    color: var(--secondary-website);
+}
+
+/* Backgrounds */
+
+.bg {
+    background-color: var(--bg);
+}
+
+.bg-blue-gradient {
+    background: linear-gradient(0.21deg, var(--blue-300) -48.62%, var(--blue-100) 32.71%, var(--blue-100) 58.07%, var(--blue-300) 133.27%);
+}
+
+.bg-blue-300 {
+    background-color: var(--blue-300) !important;
+}
+
+.bg-transparent-fill-95 {
+    background-color: var(--transparent-fill-95);
+}
+
+.bg-blue-transparent {
+    background-color: var(--blue-transparent-bg);
+}
+
+.bg-white {
+    background-color: var(--white);
+}
+
+/* Shadows */
+.shadow-stroke {
+    box-shadow: var(--shadow-stroke);
+}
+
+/* Buttons */
+
+.outline {
+    border: 1px var(--secondary-white);
+    border-radius: 16px;
+}
+
+.filled {
+    background-color: var(--blue-300);
+    border-radius: 16px;
+}
+
+.border {
+    border: 1px solid #FFFFFF33;
+    border-radius: 16px;
+}
+
+.border-cards {
+    border: 1px solid var(--border-color-cards);
+    border-radius: 16px;
+}
