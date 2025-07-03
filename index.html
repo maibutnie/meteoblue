@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Homepage</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Local project styles -->
@@ -22,272 +22,432 @@
 </head>
 
 <body>
-    <section class="flex flex-col gap-[141px] bg-blue-gradient pb-10">
-        <header class="py-6">
+    <section class="flex flex-col gap-10 lg:gap-40 bg-blue-gradient pb-10">
+        <header class="py-6 px-6">
             <nav class="flex justify-between items-center">
                 <a>
                     <img src="assets/meteoblue.svg" alt="Logo">
                 </a>
-                <div class="flex gap-[41px] items-center">
+                <div class="hidden md:flex gap-[41px] items-center">
                     <a class="secondary-white">Products</a>
                     <a class="secondary-white">Solutions</a>
                     <a class="secondary-white">Pricing</a>
                     <a class="filled white px-8 py-3">Contact us</a>
                 </div>
+                <div class="md:hidden">
+                    <span class="material-symbols-outlined secondary-white">menu</span>
+                </div>
             </nav>
         </header>
-        <article>
-            <div class="flex">
-                <div class="w-[612px] flex flex-col gap-12">
-                    <h1 class="header-0 white">Accurate Weather for Your Business</h1>
-                    <p class="main--l secondary-white">Transform your solar power operations with cutting‑edge weather
-                        insights.</p>
-                    <div class="flex gap-6">
-                        <a class="outline secondary-white px-[62px] py-4">Contact us</a>
-                        <a class="filled secondary-white px-[62px] py-4">Contact us</a>
+
+        <article class="ingradient">
+            <article class="ingradient px-4">
+                <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 max-w-screen-xl mx-auto">
+                    <div class="w-full lg:w-[612px] flex flex-col gap-6">
+                        <h1 class="superheader white text-2xl sm:text-3xl">Accurate Weather for Your Business</h1>
+                        <p class="main secondary-white text-base sm:text-lg">
+                            Transform your solar power operations with cutting‑edge weather insights.
+                        </p>
+                        <div class="flex flex-col gap-4 sm:hidden">
+                            <img src="assets/ww.png" alt="Wind warning" class="w-full object-contain">
+                            <img src="assets/ppe.png" alt="Power plant efficiency" class="w-full object-contain">
+                        </div>
+                        <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+                            <a class="outline secondary-white px-[62px] py-4 text-center">Contact&nbsp;us</a>
+                            <a class="filled secondary-white px-[62px] py-4 text-center">Contact&nbsp;us</a>
+                        </div>
+                    </div>
+
+                    <div class="hidden sm:flex flex-col gap-[21px] w-[450px]">
+                        <img src="assets/cardstablet.png" alt="Cards" class="sm:w-full lg:hidden object-cover">
+                        <img src="assets/ww.png" alt="Wind warning" class="max-lg:hidden max-w-[350px] self-center">
+                        <img src="assets/ppe.png" alt="Power plant efficiency" class="max-lg:hidden max-w-[412px]">
+                    </div>
+                </div>
+            </article>
+
+        </article>
+        <article class="ingradient flex-nowrap flex items-center gap-[28px] md:gap-8">
+
+            <div class="flex-1 min-w-0 flex">
+                <img src="assets/siemens.svg" alt="Siemens Logo" class="logo max-w-full h-auto object-contain" />
+            </div>
+
+            <div class="flex-1 min-w-0 flex">
+                <img src="assets/claas.svg" alt="Claas Logo" class="logo max-w-full h-auto object-contain" />
+            </div>
+
+            <div class="flex-1 min-w-0 flex">
+                <img src="assets/pessl.svg" alt="Pessl Logo" class="logo max-w-full h-auto object-contain" />
+            </div>
+        </article>
+    </section>
+
+    <main>
+        <section class="flex flex-col gap-8 py-[100px] bg-blue-300">
+            <h2 class="header white">Our services</h2>
+            <div class="flex p-4 border w-full flex-wrap gap-2 lg:gap-4">
+                <button data-type="weather"
+                    class="main white bg-blue-transparent rounded-2xl p-3 md:py-4 md:px-6">Weather API</button>
+                <button data-type="visuals" class="main white rounded-2xl p-3 md:py-4 md:px-6">Plug & Play
+                    Visuals</button>
+                <button data-type="assessment" class="main white rounded-2xl p-3 md:py-4 md:px-6">Climate
+                    Assessment</button>
+            </div>
+
+            <div class="flex flex-col gap-10">
+
+                <div class="relative overflow-hidden w-full">
+                    <div id="carouselTrackAPI" class="flex transition-transform duration-500 ease-in-out gap-6"></div>
+                </div>
+                <nav class="flex items-center justify-center">
+                    <button id="prevBtnAPI" class="white"><span
+                            class="material-symbols-outlined text-3xl ">chevron_left</span></button>
+                    <span id="pageInfoAPI" class="quote white">1 / 2</span>
+                    <button id="nextBtnAPI" class="white">
+                        <span class="material-symbols-outlined text-3xl ">chevron_right</span>
+                    </button>
+                </nav>
+            </div>
+        </section>
+
+        <section class="bg py-8 flex flex-col gap-8 md:py-10 md:gap-10 lg:py-20 lg:gap-20">
+            <article>
+                <div class="flex flex-col gap-6 md:gap-8">
+                    <h2 class="header dark-blue">Sectors we work with</h2>
+
+                    <div class="overflow-hidden relative">
+                        <div id="carouselTrack" class="flex transition-transform duration-500 ease-in-out gap-6">
+                            <div
+                                class="flex-shrink-0 bg-white border shadow rounded-2xl p-4 flex flex-col gap-4 min-w-0 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]">
+                                <img src="assets/solar.jpg" alt="Solar Energy"
+                                    class="w-full h-[248px] object-cover rounded-2xl">
+                                <div class="flex flex-col gap-4">
+                                    <h3 class="subheader dark-blue">Energy</h3>
+                                    <p class="main secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis
+                                        viverra
+                                        ornare, eros dolor interdum nulla.</p>
+                                </div>
+                                <a class="flex main secondary-website items-center">Learn more
+                                    <span class="material-symbols-outlined">chevron_right</span>
+                                </a>
+                            </div>
+                            <div
+                                class="flex-shrink-0 bg-white border shadow rounded-2xl p-4 flex flex-col gap-4 min-w-0 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]">
+                                <img src="assets/agriculture.jpg" alt="Agriculture"
+                                    class="w-full h-[248px] object-cover rounded-2xl">
+                                <div class="flex flex-col gap-4">
+                                    <h3 class="subheader dark-blue">Agriculture</h3>
+                                    <p class="main secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis
+                                        viverra
+                                        ornare, eros dolor interdum nulla.</p>
+                                </div>
+                                <a class="flex main secondary-website items-center">Learn more
+                                    <span class="material-symbols-outlined">chevron_right</span>
+                                </a>
+                            </div>
+                            <div
+                                class="flex-shrink-0 bg-white border shadow rounded-2xl p-4 flex flex-col gap-4 min-w-0 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]">
+                                <img src="assets/urban.png" alt="Urban Development"
+                                    class="w-full h-[248px] object-cover rounded-2xl">
+                                <div class="flex flex-col gap-4">
+                                    <h3 class="subheader dark-blue">Urban Development</h3>
+                                    <p class="main secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis
+                                        viverra
+                                        ornare, eros dolor interdum nulla.</p>
+                                </div>
+                                <a class="flex main secondary-website items-center">Learn more
+                                    <span class="material-symbols-outlined">chevron_right</span>
+                                </a>
+                            </div>
+                            <div
+                                class="flex-shrink-0 bg-white border shadow rounded-2xl p-4 flex flex-col gap-4 min-w-0 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]">
+                                <img src="assets/traffic.jpg" alt="Traffic"
+                                    class="w-full h-[248px] object-cover rounded-2xl">
+                                <div class="flex flex-col gap-4">
+                                    <h3 class="subheader dark-blue">Traffic</h3>
+                                    <p class="main secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis
+                                        viverra
+                                        ornare, eros dolor interdum nulla.</p>
+                                </div>
+                                <a class="flex main secondary-website items-center">Learn more
+                                    <span class="material-symbols-outlined">chevron_right</span>
+                                </a>
+                            </div>
+                            <div
+                                class="flex-shrink-0 bg-white border shadow rounded-2xl p-4 flex flex-col gap-4 min-w-0 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]">
+                                <img src="assets/leisure.jpg" alt="Leisure"
+                                    class="w-full h-[248px] object-cover rounded-2xl">
+                                <div class="flex flex-col gap-4">
+                                    <h3 class="subheader dark-blue">Leisure</h3>
+                                    <p class="main secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis
+                                        viverra
+                                        ornare, eros dolor interdum nulla.</p>
+                                </div>
+                                <a class="flex main secondary-website items-center">Learn more
+                                    <span class="material-symbols-outlined">chevron_right</span>
+                                </a>
+                            </div>
+                            <div
+                                class="flex-shrink-0 bg-white border shadow rounded-2xl p-4 flex flex-col gap-4 min-w-0 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]">
+                                <img src="assets/consulting.jpg" alt="Consulting"
+                                    class="w-full h-[248px] object-cover rounded-2xl">
+                                <div class="flex flex-col gap-4">
+                                    <h3 class="subheader dark-blue">Consulting</h3>
+                                    <p class="main secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis
+                                        viverra
+                                        ornare, eros dolor interdum nulla.</p>
+                                </div>
+                                <a class="flex main secondary-website items-center">Learn more
+                                    <span class="material-symbols-outlined">chevron_right</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <nav class="flex items-center justify-center">
+                        <button id="prevBtnSector" class="dark-blue"><span
+                                class="material-symbols-outlined text-3xl ">chevron_left</span></button>
+                        <span id="pageInfo" class="quote dark-blue">1 / 2</span>
+                        <button id="nextBtnSector" class="dark-blue">
+                            <span class="material-symbols-outlined text-3xl ">chevron_right</span>
+                        </button>
+                    </nav>
+                </div>
+            </article>
+
+            <article>
+                <div class="flex gap-6 max-sm:flex-wrap">
+                    <div class="p-4 flex flex-col gap-4 bg-white shadow-stroke rounded-2xl lg:p-8">
+                        <h2 class="header dark-blue">12%</h2>
+                        <p class="main secondary-website">Increase in energy yield through dynamic weather adjustments
+                        </p>
+                    </div>
+                    <div class="p-4 flex flex-col gap-4 bg-blue-300 shadow-stroke rounded-2xl lg:p-8">
+                        <h2 class="header white">95%</h2>
+                        <p class="main white">Increase in energy yield through dynamic weather adjustments</p>
+                    </div>
+                    <div class="p-4 flex flex-col gap-4 bg-white shadow-stroke rounded-2xl lg:p-8">
+                        <h2 class="header dark-blue">60%</h2>
+                        <p class="main secondary-website">Increase in energy yield through dynamic weather adjustments
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="bg-blue-300 py-8 md:py-10 lg:py-20 flex flex-col gap-6 sm:gap-8">
+            <p class="secondary-white quote">
+                Solar-Log has relied on meteoblue for many years to&nbsp;make <span class="light-blue semibold">accurate
+                    photovoltaic
+                    power forecasts</span> with
+                their proprietary weather simulation models. We utilise the meteoblue data for site <span
+                    class="light-blue semibold">analyses, site- and area-specific solar power forecasts</span>, as well
+                as
+                services for energy trading per se.
+            </p>
+            <div class="flex gap-6 max-sm:flex-col sm:items-center">
+                <img src="assets/person.png" alt="Benjamin Groetzner"
+                    class="max-sm:mx-auto w-[64px] h-[64px] md:w-[80px] md:h-[80px] lg:w-[100px] lg:h-[100px] rounded-full">
+                <div>
+                    <h2 class="max-sm:text-center quote secondary-white">Benjamin Groetzner</h2>
+                    <p class="max-sm:text-center main secondary-white">Project manager, Digital solutions, Company Name
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-8 md:py-10 lg:py-20 flex flex-col gap-8 bg">
+            <h1 class="header dark-blue pb-10">Success stories</h1>
+
+            <div class="overflow-hidden relative">
+                <div id="carouselTrackSuccess" class="flex transition-transform duration-500 ease-in-out gap-6">
+                    <div
+                        class="flex-shrink-0 bg-white border shadow rounded-2xl p-4 flex flex-col gap-4 min-w-0 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]">
+                        <div class="w-full h-[248px] rounded-2xl bg"></div>
+                        <div class="flex flex-col gap-4">
+                            <h3 class="subheader dark-blue">Long heading is what you see here in this feature section
+                            </h3>
+                            <p class="main secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis
+                                viverra
+                                ornare, eros dolor interdum nulla.</p>
+                        </div>
+                        <a class="flex main secondary-website items-center">Learn more
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </a>
+                    </div>
+                    <div
+                        class="flex-shrink-0 bg-white border shadow rounded-2xl p-4 flex flex-col gap-4 min-w-0 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]">
+                        <div class="w-full h-[248px] rounded-2xl bg"></div>
+                        <div class="flex flex-col gap-4">
+                            <h3 class="subheader dark-blue">Long heading is what you see here in this feature section
+                            </h3>
+                            <p class="main secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis
+                                viverra
+                                ornare, eros dolor interdum nulla.</p>
+                        </div>
+                        <a class="flex main secondary-website items-center">Learn more
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </a>
+                    </div>
+                    <div
+                        class="flex-shrink-0 bg-white border shadow rounded-2xl p-4 flex flex-col gap-4 min-w-0 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]">
+                        <div class="w-full h-[248px] rounded-2xl bg"></div>
+                        <div class="flex flex-col gap-4">
+                            <h3 class="subheader dark-blue">Long heading is what you see here in this feature section
+                            </h3>
+                            <p class="main secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis
+                                viverra
+                                ornare, eros dolor interdum nulla.</p>
+                        </div>
+                        <a class="flex main secondary-website items-center">Learn more
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </a>
+                    </div>
+                    <div
+                        class="flex-shrink-0 bg-white border shadow rounded-2xl p-4 flex flex-col gap-4 min-w-0 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]">
+                        <div class="w-full h-[248px] rounded-2xl bg"></div>
+                        <div class="flex flex-col gap-4">
+                            <h3 class="subheader dark-blue">Long heading is what you see here in this feature section
+                            </h3>
+                            <p class="main secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis
+                                viverra
+                                ornare, eros dolor interdum nulla.</p>
+                        </div>
+                        <a class="flex main secondary-website items-center">Learn more
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </a>
+                    </div>
+                    <div
+                        class="flex-shrink-0 bg-white border shadow rounded-2xl p-4 flex flex-col gap-4 min-w-0 w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)]">
+                        <div class="w-full h-[248px] rounded-2xl bg"></div>
+                        <div class="flex flex-col gap-4">
+                            <h3 class="subheader dark-blue">Long heading is what you see here in this feature section
+                            </h3>
+                            <p class="main secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis
+                                viverra
+                                ornare, eros dolor interdum nulla.</p>
+                        </div>
+                        <a class="flex main secondary-website items-center">Learn more
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <nav class="flex items-center justify-center">
+                <button id="prevBtnSuccess" class="dark-blue">
+                    <span class="material-symbols-outlined text-3xl">chevron_left</span>
+                </button>
+                <span id="pageInfoSuccess" class="quote dark-blue">1 / 2</span>
+                <button id="nextBtnSuccess" class="dark-blue quote">
+                    <span class="material-symbols-outlined text-3xl">chevron_right</span>
+                </button>
+            </nav>
+        </section>
+
+        <section class="bg-blue-gradient flex py-8 md:py-10 lg:py-20 max-sm:flex-col max-md:gap-8 items-center">
+            <div class="flex flex-col gap-5 md:gap-6 lg:gap-8">
+                <h1 class="superheader secondary-white">Personalised solutions</h1>
+                <p class="main secondary-white">Transform your solar power operations with cutting-edge weather
+                    insights.
+                </p>
+                <a
+                    class="filled secondary-white px-[62px] py-4 main--m w-fit max-sm:w-full max-sm:text-center">Contact&nbsp;us</a>
+            </div>
+            <div class="max-w-[400px]">
+                <img src="assets/fullmap.png" alt="Map" class="max-md:hidden">
+                <img src="assets/mobmap.png" alt="Map" class="md:hidden max-md:w-full">
+            </div>
+        </section>
+
+        <footer class="bg py-10">
+            <img src="assets/meteoblue.svg" alt="Logo">
+            <div class="py-8 flex gap-8 pb-8 max-xl:flex-col lg:gap-[54px]">
+                <div>
+                    <div class="flex gap-1 items-center pb-8">
+                        <img src="assets/swiss.png" alt="Swiss Flag" class="w-6 h-6">
+                        <span class="main--l secondary-website header-12 uppercase">Swiss quality</span>
+                    </div>
+                    <div class="flex max-md:flex-col max-sm:gap-8">
+                        <div class="w-[164px] flex flex-col">
+                            <h1 class="main--s dark-blue pb-4">Products</h1>
+                            <a href="#" class="py-2 main--s secondary-website">Link One</a>
+                            <a href="#" class="py-2 main--s secondary-website">Link Two</a>
+                            <a href="#" class="py-2 main--s secondary-website">Link Three</a>
+                            <a href="#" class="py-2 main--s secondary-website">Link Four</a>
+                            <a href="#" class="py-2 main--s secondary-website">Link Five</a>
+                        </div>
+                        <div class="w-[164px] flex flex-col">
+                            <h1 class="main--s dark-blue pb-4">Solutions</h1>
+                            <a href="#" class="py-2 main--s secondary-website">Link Six</a>
+                            <a href="#" class="py-2 main--s secondary-website">Link Seven</a>
+                            <a href="#" class="py-2 main--s secondary-website">Link Eight</a>
+                            <a href="#" class="py-2 main--s secondary-website">Link Nine</a>
+                            <a href="#" class="py-2 main--s secondary-website">Link Ten</a>
+                            <a href="#" class="py-2 main--s secondary-website">Link Eleven</a>
+                        </div>
+                        <div class="w-[164px] flex flex-col">
+                            <h1 class="main--s dark-blue pb-4">Pricing</h1>
+                            <a href="#" class="py-2 main--s secondary-website">Link Twelve</a>
+                            <a href="#" class="py-2 main--s secondary-website">Link Thirteen</a>
+                            <a href="#" class="py-2 main--s secondary-website">Link Fourteen</a>
+                            <a href="#" class="py-2 main--s secondary-website">Link Fifteen</a>
+                            <a href="#" class="py-2 main--s secondary-website">Link Sixteen</a>
+                        </div>
+                        <div class="w-[164px] flex flex-col">
+                            <h1 class="main--s dark-blue pb-4">About us</h1>
+                            <a href="#" class="py-2 main--s secondary-website">Link Twelve</a>
+                            <a href="#" class="py-2 main--s secondary-website">Link Thirteen</a>
+                            <a href="#" class="py-2 main--s secondary-website">Link Fourteen</a>
+                            <a href="#" class="py-2 main--s secondary-website">Link Fifteen</a>
+                            <a href="#" class="py-2 main--s secondary-website">Link Sixteen</a>
+                        </div>
                     </div>
                 </div>
                 <div>
-                    cards
+                    <h2 class="main--s dark-blue pb-4">Subscribe</h2>
+                    <p class="main--s secondary-website pb-6">Sign up for our newsletter to stay up to date on features
+                        and releases.</p>
+                    <div class="flex gap-2 pb-3 max-lg:w-full max-sm:flex-col">
+                        <input type="email" placeholder="Enter Your Email"
+                            class="px-4 py-3 border-cards rounded-xl max-sm:w-full max-lg:w-[418px]">
+                        <button
+                            class="filled px-6 py-3 white main--s rounded-xl max-sm:w-full max-lg:w-[165px]">Subscribe</button>
+                    </div>
+                    <p class="main--x-s secondary-website pb-6">By subscribing you agree to with our Privacy Policy and
+                        provide consent to receive updates from our company.</p>
                 </div>
             </div>
-        </article>
-        <article class="flex gap-16">
-            <img src="assets/siemens.svg" alt="Siemens Logo" />
-            <img src="assets/claas.svg" alt="Claas Logo" />
-            <img src="assets/pessl.svg" alt="Pessl Logo" />
-        </article>
-    </section>
-
-    <section class="flex flex-col gap-8 py-[100px] bg-blue-300">
-        <h2 class="header-1 white">Our services</h2>
-        <div class="flex gap-4 p-4 border w-full">
-            <button class="main--l white py-4 px-6 bg-blue-transparent rounded-2xl">Weather API</button>
-            <button class="main--l white py-4 px-6">Plug & Play Visuals</button>
-            <button class="main--l white py-4 px-6">Climate Assessment</button>
-        </div>
-        <div class="flex flex-col gap-10">
-            <div class="flex gap-6">
-                <div class="p-6 bg-blue-transparent rounded-2xl">
-                    <div class="border w-fit mb-16">
-                        <span class="p-4 header-2 material-symbols-outlined light-blue">weather_snowy</span>
-                    </div>
-                    <h3 class="header-3 white pb-6">Weather API</h3>
-                    <p class="main--l secondary-white pb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a class="main--l secondary-white">Learn more</a>
-                </div>
-                <div class="p-6 bg-blue-transparent rounded-2xl">
-                    <div class="border w-fit mb-16">
-                        <span class="p-4 header-2 material-symbols-outlined light-blue">weather_snowy</span>
-                    </div>
-                    <h3 class="header-3 white pb-6">Climate assessment</h3>
-                    <p class="main--l secondary-white pb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a class="main--l secondary-white">Learn more</a>
-                </div>
-                <div class="p-6 bg-blue-transparent rounded-2xl">
-                    <div class="border w-fit mb-16">
-                        <span class="p-4 header-2 material-symbols-outlined light-blue">weather_snowy</span>
-                    </div>
-                    <h3 class="header-3 white pb-6">Plug & Play Visuals</h3>
-                    <p class="main--l secondary-white pb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    <a class="main--l secondary-white">Learn more</a>
-                </div>
-            </div>
-            <nav class="items-center">навигация</nav>
-        </div>
-    </section>
-
-    <section class="py-[80px] gap-20 bg flex flex-col gap-20">
-        <div class="flex flex-col gap-10">
-            <h1 class="header-1 dark-blue">Sectors we work with</h1>
-            <div class="flex justify-between gap-6">
-                <div class="p-8 flex flex-col gap-4 bg-white shadow-stroke rounded-2xl">
-                    <img src="assets/solar.jpg" alt="Solar Energy" class="w-full h-[248px] object-cover rounded-2xl">
-                    <div>
-                        <h3 class="header-3 dark-blue">Energy</h3>
-                        <p class="main--l secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-                            ornare, eros dolor interdum nulla.</p>
-                    </div>
-                    <a class="main--l secondary-website">Learn more</a>
-                </div>
-                <div class="p-8 flex flex-col gap-4 bg-white shadow-stroke rounded-2xl">
-                    <img src="assets/agriculture.jpg" alt="Agriculture"
-                        class="w-full h-[248px] object-cover rounded-2xl">
-                    <div>
-                        <h3 class="header-3 dark-blue">Agriculture</h3>
-                        <p class="main--l secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-                            ornare, eros dolor interdum nulla.</p>
-                    </div>
-                    <a class="main--l secondary-website">Learn more</a>
-                </div>
-                <div class="p-8 flex flex-col gap-4 bg-white shadow-stroke rounded-2xl">
-                    <img src="assets/urban.png" alt="Urban Development"
-                        class="w-full h-[248px] object-cover rounded-2xl">
-                    <div>
-                        <h3 class="header-3 dark-blue">Urban Development</h3>
-                        <p class="main--l secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-                            ornare, eros dolor interdum nulla.</p>
-                    </div>
-                    <a class="main--l secondary-website">Learn more</a>
-                </div>
-            </div>
-            <nav>навигация</nav>
-        </div>
-        <div class="flex justify-between gap-6">
-            <div class="p-8 flex flex-col gap-4 bg-white shadow-stroke rounded-2xl">
-                <h2 class="header-1 dark-blue">12%</h2>
-                <p class="main--l secondary-website">Increase in energy yield through dynamic weather adjustments</p>
-            </div>
-            <div class="p-8 flex flex-col gap-4 bg-blue-300 shadow-stroke rounded-2xl">
-                <h2 class="header-1 white">95%</h2>
-                <p class="main--l white">Increase in energy yield through dynamic weather adjustments</p>
-            </div>
-            <div class="p-8 flex flex-col gap-4 bg-white shadow-stroke rounded-2xl">
-                <h2 class="header-1 dark-blue">60%</h2>
-                <p class="main--l secondary-website">Increase in energy yield through dynamic weather adjustments</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="bg-blue-300 py-[100px] flex flex-col gap-16">
-        <p class="secondary-white header-2">
-            Solar-Log has relied on meteoblue for many years to&nbsp;make <span class="light-blue semibold">accurate
-                photovoltaic
-                power forecasts</span> with
-            their proprietary weather simulation models. We utilise the meteoblue data for site <span
-                class="light-blue semibold">analyses, site- and area-specific solar power forecasts</span>, as well as
-            services for energy trading per se.
-        </p>
-        <div class="flex gap-6">
-            <img src="assets/person.png" alt="Benjamin Groetzner" class="w-[100px] h-[100px] rounded-full">
-            <div>
-                <h2 class="header-2 secondary-white">Benjamin Groetzner</h2>
-                <p class="main--l secondary-white">Project manager, Digital solutions, Company Name</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-20 flex flex-col gap-8 bg">
-        <h1 class="header-1 dark-blue pb-10">Success stories</h1>
-        <div class="flex gap-6 justify-between pb-8">
-            <div class="p-8 flex flex-col gap-8 bg-white shadow-stroke rounded-2xl">
-                <!-- <img src="assets/#" alt="#" class="w-full h-[248px] object-cover rounded-2xl"> -->
-                <div class="w-full h-[248px] rounded-2xl bg"></div>
-                <h3 class="header-3 dark-blue">Long heading is what you see here in this feature section</h3>
-                <p class="main--l secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-                    ornare, eros dolor interdum nulla.</p>
-                <a class="main--l secondary-website">Learn more</a>
-            </div>
-            <div class="p-8 flex flex-col gap-8 bg-white shadow-stroke rounded-2xl">
-                <!-- <img src="assets/#" alt="#" class="w-full h-[248px] object-cover rounded-2xl"> -->
-                <div class="w-full h-[248px] rounded-2xl bg"></div>
-                <h3 class="header-3 dark-blue">Long heading is what you see here in this feature section</h3>
-                <p class="main--l secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-                    ornare, eros dolor interdum nulla.</p>
-                <a class="main--l secondary-website">Learn more</a>
-            </div>
-            <div class="p-8 flex flex-col gap-8 bg-white shadow-stroke rounded-2xl">
-                <!-- <img src="assets/#" alt="#" class="w-full h-[248px] object-cover rounded-2xl"> -->
-                <div class="w-full h-[248px] rounded-2xl bg"></div>
-                <h3 class="header-3 dark-blue">Long heading is what you see here in this feature section</h3>
-                <p class="main--l secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-                    ornare, eros dolor interdum nulla.</p>
-                <a class="main--l secondary-website">Learn more</a>
-            </div>
-        </div>
-        <nav>навигация</nav>
-    </section>
-
-    <section class="bg-blue-gradient py-[70px] flex">
-        <div class="flex flex-col gap-8">
-            <h1 class="header-0 secondary-white">Personalised solutions</h1>
-            <p class="main--l secondary-white">Transform your solar power operations with cutting-edge weather insights.
-            </p>
-            <a class="filled secondary-white px-[62px] py-4 main--m w-fit">Contact us</a>
-        </div>
-        <div class="w-[491px]">
-            cards
-        </div>
-    </section>
-
-    <footer class="bg py-10">
-        <img src="assets/meteoblue.svg" alt="Logo">
-        <div class="py-8 flex gap-[54px] pb-8">
-            <div>
-                <div class="flex gap-1 items-center pb-8">
-                    <img src="assets/swiss.png" alt="Swiss Flag" class="w-6 h-6">
-                    <span class="main--l secondary-website header-12 uppercase">Swiss quality</span>
-                </div>
-                <div class="flex">
-                    <div class="w-[164px] flex flex-col">
-                        <h1 class="main--s dark-blue pb-4">Products</h1>
-                        <a href="#" class="py-2 main--s secondary-website">Link One</a>
-                        <a href="#" class="py-2 main--s secondary-website">Link Two</a>
-                        <a href="#" class="py-2 main--s secondary-website">Link Three</a>
-                        <a href="#" class="py-2 main--s secondary-website">Link Four</a>
-                        <a href="#" class="py-2 main--s secondary-website">Link Five</a>
-                    </div>
-                    <div class="w-[164px] flex flex-col">
-                        <h1 class="main--s dark-blue pb-4">Solutions</h1>
-                        <a href="#" class="py-2 main--s secondary-website">Link Six</a>
-                        <a href="#" class="py-2 main--s secondary-website">Link Seven</a>
-                        <a href="#" class="py-2 main--s secondary-website">Link Eight</a>
-                        <a href="#" class="py-2 main--s secondary-website">Link Nine</a>
-                        <a href="#" class="py-2 main--s secondary-website">Link Ten</a>
-                        <a href="#" class="py-2 main--s secondary-website">Link Eleven</a>
-                    </div>
-                    <div class="w-[164px] flex flex-col">
-                        <h1 class="main--s dark-blue pb-4">Pricing</h1>
-                        <a href="#" class="py-2 main--s secondary-website">Link Twelve</a>
-                        <a href="#" class="py-2 main--s secondary-website">Link Thirteen</a>
-                        <a href="#" class="py-2 main--s secondary-website">Link Fourteen</a>
-                        <a href="#" class="py-2 main--s secondary-website">Link Fifteen</a>
-                        <a href="#" class="py-2 main--s secondary-website">Link Sixteen</a>
-                    </div>
-                    <div class="w-[164px] flex flex-col">
-                        <h1 class="main--s dark-blue pb-4">About us</h1>
-                        <a href="#" class="py-2 main--s secondary-website">Link Twelve</a>
-                        <a href="#" class="py-2 main--s secondary-website">Link Thirteen</a>
-                        <a href="#" class="py-2 main--s secondary-website">Link Fourteen</a>
-                        <a href="#" class="py-2 main--s secondary-website">Link Fifteen</a>
-                        <a href="#" class="py-2 main--s secondary-website">Link Sixteen</a>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h2 class="main--s dark-blue pb-4">Subscribe</h2>
-                <p class="main--s secondary-website pb-6">Sign up for our newsletter to stay up to date on features and
-                    releases.</p>
-                <div class="flex gap-2 pb-3">
-                    <input type="email" placeholder="Enter Your Email" class="px-4 py-3 border-cards">
-                    <button class="filled px-6 py-3 white">Subscribe</button>
-                </div>
-                <p class="main--x-s secondary-website pb-6">By subscribing you agree to with our Privacy Policy and
-                    provide consent to receive updates from our company.</p>
-            </div>
-        </div>
-        <div class="flex justify-between">
-            <div class="flex gap-6">
+            <hr class="pb-6 sm:hidden">
+            <div class="flex justify-between flex-wrap gap-6 max max-md:flex-col-reverse max-md:gap-8">
                 <p class="main--x-s secondary-website">© 2024 meteoblue. All rights reserved.</p>
-                <a href="#" class="main--x-s secondary-website underline">Privacy Policy</a>
-                <a href="#" class="main--x-s secondary-website underline">Terms of Service</a>
-                <a href="#" class="main--x-s secondary-website underline">Cookies Settings</a>
+                <div class="flex gap-4 max-md:flex-col">
+                    <a href="#" class="main--x-s secondary-website underline">Privacy Policy</a>
+                    <a href="#" class="main--x-s secondary-website underline">Terms of Service</a>
+                    <a href="#" class="main--x-s secondary-website underline">Cookies Settings</a>
+                </div>
+                <div class="flex gap-3">
+                    <a href="#"><img src="assets/brands/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="assets/brands/instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="assets/brands/x.svg" alt="X"></a>
+                    <a href="#"><img src="assets/brands/linkedin.svg" alt="LinkedIn"></a>
+                    <a href="#"><img src="assets/brands/youtube.svg" alt="YouTube"></a>
+                </div>
             </div>
-            <div class="flex gap-3">
-                <a href="#"><img src="assets/brands/facebook.svg" alt="Facebook"></a>
-                <a href="#"><img src="assets/brands/instagram.svg" alt="Instagram"></a>
-                <a href="#"><img src="assets/brands/x.svg" alt="X"></a>
-                <a href="#"><img src="assets/brands/linkedin.svg" alt="LinkedIn"></a>
-                <a href="#"><img src="assets/brands/youtube.svg" alt="YouTube"></a>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </main>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>

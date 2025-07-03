@@ -9,8 +9,28 @@ select {
 }
 
 body > * {
+    padding: 0;
+    margin: 0;
+}
+
+main > *,
+.ingradient {
     box-sizing: border-box;
     padding: 0 165px;
+}
+
+@media (max-width: 1024px) {
+    main > *,
+    .ingradient {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    main > *,
+    .ingradient {
+        padding: 0 24px;
+    }
 }
 
 a, h1, h2, h3, p {
@@ -58,6 +78,55 @@ a {
 
 .header-12 {
     font-size: var(--header-12);
+}
+
+.main {
+    font-size: var(--main--l);
+}
+
+.superheader {
+    font-size: var(--header-0);
+}
+
+.header {
+    font-size: var(--header-1);
+}
+
+.subheader {
+    font-size: var(--header-3);
+}
+
+.quote {
+    font-size: var(--header-2);
+}
+
+@media (max-width: 1024px) {
+    .main {
+        font-size: var(--main--m);
+    }
+
+    .header {
+        font-size: var(--header-3);
+    }
+
+    .superheader {
+        font-size: var(--header-2);
+    }
+
+    .subheader,
+    .quote {
+        font-size: var(--main--l);
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        font-size: var(--main--s);
+    }
+
+    .superheader {
+        font-size: var(--header-3);
+    }
 }
 
 /* Font Weights */
