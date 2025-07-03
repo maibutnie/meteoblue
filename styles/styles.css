@@ -100,6 +100,10 @@ a {
     color: var(--secondary-website);
 }
 
+.border-color-cards {
+    color: var(--border-color-cards);
+}
+
 /* Backgrounds */
 
 .bg {
@@ -124,6 +128,26 @@ a {
 
 .bg-white {
     background-color: var(--white);
+}
+
+.bg-blue-chip {
+    background-color: var(--blue-chip);
+}
+
+.bg-yellow-chip {
+    background-color: var(--yellow-chip);
+}
+
+.bg-green-chip {
+    background-color: var(--green-chip);
+}
+
+.bg-red-chip {
+    background-color: var(--red-chip);
+}
+
+.bg-coral-chip {
+    background-color: var(--coral-chip);
 }
 
 /* Shadows */
