@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Homepage</title>
+    <title>Specific</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -22,223 +22,347 @@
 </head>
 
 <body>
-    <section class="flex flex-col gap-[141px] bg-blue-gradient pb-10">
-        <header class="py-6">
+    <section class="flex flex-col gap-10 lg:gap-40 bg-blue-gradient pb-10">
+        <header class="py-6 px-6">
             <nav class="flex justify-between items-center">
                 <a>
                     <img src="assets/meteoblue.svg" alt="Logo">
                 </a>
-                <div class="flex gap-[41px] items-center">
+                <div class="hidden md:flex gap-[41px] items-center">
                     <a class="secondary-white">Products</a>
                     <a class="secondary-white">Solutions</a>
                     <a class="secondary-white">Pricing</a>
                     <a class="filled white px-8 py-3">Contact us</a>
                 </div>
+                <div class="md:hidden">
+                    <span class="material-symbols-outlined secondary-white">menu</span>
+                </div>
             </nav>
         </header>
-        <article>
-            <div class="flex flex-col gap-12">
-                <h1 class="header-0 white">Premium Weather API – The Complete Weather API Suite</h1>
-                <p class="main--l secondary-white">Transform your solar power operations with cutting-edge weather
-                    insights.</p>
-                <div class="flex gap-6">
-                    <a class="outline secondary-white px-[62px] py-4">Contact us</a>
-                    <a class="filled secondary-white px-[62px] py-4">Contact us</a>
+
+        <article class="ingradient">
+            <article class="ingradient px-4">
+                <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-16 max-w-screen-xl mx-auto">
+                    <div class="w-full flex flex-col gap-6 lg:gap-10">
+                        <h1 class="superheader white">Premium Weather API –<br />
+                            The Complete Weather API Suite</h1>
+                        <div class="flex flex-col gap-6 lg:gap-10 lg:w-1/2">
+                            <p class="main secondary-white text-base">
+                                Transform your solar power operations with cutting‑edge weather insights.
+                            </p>
+                            <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+                                <a class="outline secondary-white px-[62px] py-4 text-center">Contact&nbsp;us</a>
+                                <a class="filled secondary-white px-[62px] py-4 text-center">Contact&nbsp;us</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </article>
+
         </article>
-        <article class="flex gap-16">
-            <img src="assets/siemens.svg" alt="Siemens Logo" />
-            <img src="assets/claas.svg" alt="Claas Logo" />
-            <img src="assets/pessl.svg" alt="Pessl Logo" />
+        <article class="ingradient flex-nowrap flex items-center gap-[28px] md:gap-8">
+
+            <div class="flex-1 min-w-0 flex">
+                <img src="assets/siemens.svg" alt="Siemens Logo" class="logo max-w-full h-auto object-contain" />
+            </div>
+
+            <div class="flex-1 min-w-0 flex">
+                <img src="assets/claas.svg" alt="Claas Logo" class="logo max-w-full h-auto object-contain" />
+            </div>
+
+            <div class="flex-1 min-w-0 flex">
+                <img src="assets/pessl.svg" alt="Pessl Logo" class="logo max-w-full h-auto object-contain" />
+            </div>
         </article>
     </section>
 
     <main>
-        <section class="flex flex-col gap-8 py-[100px] bg">
-            <article>
-                <h2 class="header-1 dark-blue">Forecast Variables  for all use-cases imagineable</h2>
-                <div class="flex flex-col gap-6">
+        <section class="flex flex-col gap-8 py-[100px] bg-blue-300">
+            <h2 class="header white">The All-in-One Weather Solution</h2>
+            <div class="flex flex-wrap gap-6 max-sm:flex-col">
+                <div
+                    class="w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] p-6 bg-blue-transparent rounded-2xl flex flex-col justify-between">
+                    <div class="flex flex-col gap-10 pb-8 lg:gap-16">
+                        <div class="border w-fit">
+                            <span class="p-4 header-2 material-symbols-outlined light-blue">weather_snowy</span>
+                        </div>
+                        <div class="flex flex-col gap-6">
+                            <h3 class="subheader white">Medium length section heading goes here</h3>
+                            <p class="main secondary-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="flex flex-col gap-3">
+                                <div class="flex gap-4 justify-between items-center">
+                                    <span
+                                        class="material-symbols-outlined p-1 secondary-white bg-blue-300 rounded-full">check</span>
+                                    <p class="main secondary-white">One API suite for all your weather needs</p>
+                                </div>
+                                <div class="flex gap-4 justify-between items-center">
+                                    <span
+                                        class="material-symbols-outlined p-1 secondary-white bg-blue-300 rounded-full">check</span>
+                                    <p class="main secondary-white">One API suite for all your weather needs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="flex main secondary-white items-center">Learn more
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </a>
+                </div>
+                <div
+                    class="w-full sm:w-[calc(50%-0.75rem)] lg:w-[calc(33.333%-1rem)] p-6 bg-blue-transparent rounded-2xl flex flex-col justify-between">
+                    <div class="flex flex-col gap-10 pb-8 lg:gap-16">
+                        <div class="border w-fit">
+                            <span class="p-4 header-2 material-symbols-outlined light-blue">weather_snowy</span>
+                        </div>
+                        <div class="flex flex-col gap-6">
+                            <h3 class="subheader white">Medium length section heading goes here</h3>
+                            <p class="main secondary-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="flex flex-col gap-3">
+                                <div class="flex gap-4 justify-between items-center">
+                                    <span
+                                        class="material-symbols-outlined p-1 secondary-white bg-blue-300 rounded-full">check</span>
+                                    <p class="main secondary-white">One API suite for all your weather needs</p>
+                                </div>
+                                <div class="flex gap-4 justify-between items-center">
+                                    <span
+                                        class="material-symbols-outlined p-1 secondary-white bg-blue-300 rounded-full">check</span>
+                                    <p class="main secondary-white">One API suite for all your weather needs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="flex main secondary-white items-center">Learn more
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </a>
+                </div>
+                <div
+                    class="w-full lg:w-[calc(33.333%-1rem)] p-6 bg-blue-transparent rounded-2xl flex flex-col justify-between">
+                    <div class="flex flex-col gap-10 pb-8 lg:gap-16">
+                        <div class="border w-fit">
+                            <span class="p-4 header-2 material-symbols-outlined light-blue">weather_snowy</span>
+                        </div>
+                        <div class="flex flex-col gap-6">
+                            <h3 class="subheader white">Medium length section heading goes here</h3>
+                            <p class="main secondary-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            <div class="flex flex-col gap-3">
+                                <div class="flex gap-4 justify-between items-center">
+                                    <span
+                                        class="material-symbols-outlined p-1 secondary-white bg-blue-300 rounded-full">check</span>
+                                    <p class="main secondary-white">One API suite for all your weather needs</p>
+                                </div>
+                                <div class="flex gap-4 justify-between items-center">
+                                    <span
+                                        class="material-symbols-outlined p-1 secondary-white bg-blue-300 rounded-full">check</span>
+                                    <p class="main secondary-white">One API suite for all your weather needs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="flex main secondary-white items-center">Learn more
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg py-8 flex flex-col gap-8 md:py-10 md:gap-10 lg:py-20 lg:gap-20">
+            <article class="flex flex-col gap-8">
+                <h2 class="header dark-blue">Forecast Variables for all use-cases imagineable</h2>
+                <div class="flex flex-wrap gap-6">
                     <!-- card1 -->
-                    <div class="bg-white w-full rounded-2xl shadow-stroke p-8 flex flex-col gap-8">
+                    <div
+                        class="bg-white w-full sm:w-[calc(50%-0.75rem)] lg:w-full rounded-2xl shadow-stroke p-8 flex flex-col gap-8">
                         <div>
-                            <h3 class="dark-blue header-3 pb-4">General Data Packages</h3>
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-3xl">category_search</span>
+                                <h3 class="dark-blue subheader">General Data Packages</h3>
+                            </div>
                             <div class="border-t border-cards my-4"></div>
                         </div>
-                        <p class="main--l secondary-website">Most common weather variables for general purposes and
+                        <p class="main secondary-website">Most common weather variables for general purposes and
                             current
                             weather information, including observations and measurements.</p>
                         <div class="flex flex-col gap-6">
-                            <div class="flex w-full justify-between items-center">
-                                <h4 class="uppercase secondary-website main--m semibold">Basic variables:</h4>
-                                <div class="flex gap-3">
+                            <div class="flex w-full justify-between items-center flex-wrap">
+                                <h4 class="uppercase secondary-website cardheader semibold">Basic variables:</h4>
+                                <div class="flex gap-3 flex-wrap">
                                     <span
-                                        class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-blue-chip">Temperature</span>
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-blue-chip">Temperature</span>
                                     <span
-                                        class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-yellow-chip">Precipitation</span>
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-yellow-chip">Precipitation</span>
                                     <span
-                                        class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-green-chip">Wind</span>
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-green-chip">Wind</span>
                                     <span
-                                        class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-red-chip">Sea
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-red-chip">Sea
                                         Level Pressure</span>
                                     <span
-                                        class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-coral-chip">Predictability</span>
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-coral-chip">Predictability</span>
                                 </div>
                             </div>
-                            <div class="flex w-full justify-between items-center">
-                                <h4 class="uppercase secondary-website main--m semibold">Current variables:</h4>
-                                <div class="flex gap-3">
+                            <div class="flex w-full justify-between items-center flex-wrap">
+                                <h4 class="uppercase secondary-website cardheader semibold">Current variables:</h4>
+                                <div class="flex gap-3 flex-wrap">
                                     <span
-                                        class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-blue-chip">Temperature</span>
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-blue-chip">Temperature</span>
                                     <span
-                                        class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-yellow-chip">Precipitation</span>
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-yellow-chip">Precipitation</span>
                                     <span
-                                        class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-green-chip">Wind</span>
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-green-chip">Wind</span>
                                     <span
-                                        class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-red-chip">Sea
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-red-chip">Sea
                                         Level Pressure</span>
                                     <span
-                                        class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-coral-chip">Predictability</span>
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-coral-chip">Predictability</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- card2 -->
-                    <div class="bg-white w-full rounded-2xl shadow-stroke p-8 flex flex-col gap-8">
+                    <div
+                        class="bg-white w-full sm:w-[calc(50%-0.75rem)] lg:w-full rounded-2xl shadow-stroke p-8 flex flex-col gap-8">
                         <div>
-                            <h3 class="dark-blue header-3 pb-4">General Data Packages</h3>
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-3xl">category_search</span>
+                                <h3 class="dark-blue subheader">General Data Packages</h3>
+                            </div>
                             <div class="border-t border-cards my-4"></div>
                         </div>
-                        <p class="main--l secondary-website">Most common weather variables for general purposes and
+                        <p class="main secondary-website">Most common weather variables for general purposes and
                             current
                             weather information, including observations and measurements.</p>
                         <div class="flex flex-col gap-6">
-                            <div class="flex w-full justify-between items-center">
-                                <h4 class="uppercase secondary-website main--m semibold">Basic variables:</h4>
-                                <div class="flex gap-3">
+                            <div class="flex w-full justify-between items-center flex-wrap">
+                                <h4 class="uppercase secondary-website cardheader semibold">Basic variables:</h4>
+                                <div class="flex gap-3 flex-wrap">
                                     <span
-                                        class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-blue-chip">Temperature</span>
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-blue-chip">Temperature</span>
                                     <span
-                                        class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-yellow-chip">Precipitation</span>
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-yellow-chip">Precipitation</span>
                                     <span
-                                        class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-green-chip">Wind</span>
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-green-chip">Wind</span>
                                     <span
-                                        class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-red-chip">Sea
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-red-chip">Sea
                                         Level Pressure</span>
                                     <span
-                                        class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-coral-chip">Predictability</span>
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-coral-chip">Predictability</span>
                                 </div>
                             </div>
-                            <div class="flex w-full justify-between items-center">
-                                <h4 class="uppercase secondary-website main--m semibold">Current variables:</h4>
-                                <div class="flex gap-3">
+                            <div class="flex w-full justify-between items-center flex-wrap">
+                                <h4 class="uppercase secondary-website cardheader semibold">Current variables:</h4>
+                                <div class="flex gap-3 flex-wrap">
                                     <span
-                                        class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-blue-chip">Temperature</span>
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-blue-chip">Temperature</span>
                                     <span
-                                        class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-yellow-chip">Precipitation</span>
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-yellow-chip">Precipitation</span>
                                     <span
-                                        class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-green-chip">Wind</span>
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-green-chip">Wind</span>
                                     <span
-                                        class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-red-chip">Sea
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-red-chip">Sea
                                         Level Pressure</span>
                                     <span
-                                        class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-coral-chip">Predictability</span>
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-coral-chip">Predictability</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="flex justify-between w-full gap-6">
-                        <!-- card3 -->
-                        <div class="bg-white w-1/2 rounded-2xl shadow-stroke p-8 flex flex-col gap-8">
-                            <div>
-                                <h3 class="dark-blue header-3 pb-4">General Data Packages</h3>
-                                <div class="border-t border-cards my-4"></div>
+                    <!-- card3 -->
+                    <div
+                        class="bg-white w-full sm:w-[calc(50%-0.75rem)] rounded-2xl shadow-stroke p-8 flex flex-col gap-8">
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-3xl">category_search</span>
+                                <h3 class="dark-blue subheader">General Data Packages</h3>
                             </div>
-                            <p class="main--l secondary-website">Most common weather variables for general purposes and
-                                current
-                                weather information, including observations and measurements.</p>
-                            <div class="flex flex-col gap-6">
-                                <div class="flex w-full justify-between items-center flex-wrap gap-3">
-                                    <h4 class="uppercase secondary-website main--m semibold">Basic variables:</h4>
-                                    <div class="flex gap-3 flex-wrap">
-                                        <span
-                                            class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-blue-chip">Temperature</span>
-                                        <span
-                                            class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-yellow-chip">Precipitation</span>
-                                        <span
-                                            class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-green-chip">Wind</span>
-                                        <span
-                                            class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-red-chip">Sea
-                                            Level Pressure</span>
-                                        <span
-                                            class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-coral-chip">Predictability</span>
-                                    </div>
+                            <div class="border-t border-cards my-4"></div>
+                        </div>
+                        <p class="main secondary-website">Most common weather variables for general purposes and
+                            current
+                            weather information, including observations and measurements.</p>
+                        <div class="flex flex-col gap-6">
+                            <div class="flex w-full justify-between items-center flex-wrap gap-3">
+                                <h4 class="uppercase secondary-website cardheader semibold">Basic variables:</h4>
+                                <div class="flex gap-3 flex-wrap">
+                                    <span
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-blue-chip">Temperature</span>
+                                    <span
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-yellow-chip">Precipitation</span>
+                                    <span
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-green-chip">Wind</span>
+                                    <span
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-red-chip">Sea
+                                        Level Pressure</span>
+                                    <span
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-coral-chip">Predictability</span>
                                 </div>
-                                <div class="flex w-full justify-between items-center flex-wrap gap-3">
-                                    <h4 class="uppercase secondary-website main--m semibold">Current variables:</h4>
-                                    <div class="flex gap-3 flex-wrap">
-                                        <span
-                                            class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-blue-chip">Temperature</span>
-                                        <span
-                                            class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-yellow-chip">Precipitation</span>
-                                        <span
-                                            class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-green-chip">Wind</span>
-                                        <span
-                                            class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-red-chip">Sea
-                                            Level Pressure</span>
-                                        <span
-                                            class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-coral-chip">Predictability</span>
-                                    </div>
+                            </div>
+                            <div class="flex w-full justify-between items-center flex-wrap gap-3">
+                                <h4 class="uppercase secondary-website cardheader semibold">Current variables:</h4>
+                                <div class="flex gap-3 flex-wrap">
+                                    <span
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-blue-chip">Temperature</span>
+                                    <span
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-yellow-chip">Precipitation</span>
+                                    <span
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-green-chip">Wind</span>
+                                    <span
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-red-chip">Sea
+                                        Level Pressure</span>
+                                    <span
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-coral-chip">Predictability</span>
                                 </div>
                             </div>
                         </div>
-                        <!-- card4 -->
-                        <div class="bg-white w-1/2 rounded-2xl shadow-stroke p-8 flex flex-col gap-8">
-                            <div>
-                                <h3 class="dark-blue header-3 pb-4">General Data Packages</h3>
-                                <div class="border-t border-cards my-4"></div>
+                    </div>
+                    <!-- card4 -->
+                    <div
+                        class="bg-white w-full sm:w-[calc(50%-0.75rem)] rounded-2xl shadow-stroke p-8 flex flex-col gap-8">
+                        <div>
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-3xl">category_search</span>
+                                <h3 class="dark-blue subheader">General Data Packages</h3>
                             </div>
-                            <p class="main--l secondary-website">Most common weather variables for general purposes and
-                                current
-                                weather information, including observations and measurements.</p>
-                            <div class="flex flex-col gap-6">
-                                <div class="flex w-full justify-between items-center flex-wrap gap-3">
-                                    <h4 class="uppercase secondary-website main--m semibold">Basic variables:</h4>
-                                    <div class="flex gap-3 flex-wrap">
-                                        <span
-                                            class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-blue-chip">Temperature</span>
-                                        <span
-                                            class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-yellow-chip">Precipitation</span>
-                                        <span
-                                            class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-green-chip">Wind</span>
-                                        <span
-                                            class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-red-chip">Sea
-                                            Level Pressure</span>
-                                        <span
-                                            class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-coral-chip">Predictability</span>
-                                    </div>
+                            <div class="border-t border-cards my-4"></div>
+                        </div>
+                        <p class="main secondary-website">Most common weather variables for general purposes and
+                            current
+                            weather information, including observations and measurements.</p>
+                        <div class="flex flex-col gap-6">
+                            <div class="flex w-full justify-between items-center flex-wrap gap-3">
+                                <h4 class="uppercase secondary-website cardheader semibold">Basic variables:</h4>
+                                <div class="flex gap-3 flex-wrap">
+                                    <span
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-blue-chip">Temperature</span>
+                                    <span
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-yellow-chip">Precipitation</span>
+                                    <span
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-green-chip">Wind</span>
+                                    <span
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-red-chip">Sea
+                                        Level Pressure</span>
+                                    <span
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-coral-chip">Predictability</span>
                                 </div>
-                                <div class="flex w-full justify-between items-center flex-wrap gap-3">
-                                    <h4 class="uppercase secondary-website main--m semibold">Current variables:</h4>
-                                    <div class="flex gap-3 flex-wrap">
-                                        <span
-                                            class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-blue-chip">Temperature</span>
-                                        <span
-                                            class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-yellow-chip">Precipitation</span>
-                                        <span
-                                            class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-green-chip">Wind</span>
-                                        <span
-                                            class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-red-chip">Sea
-                                            Level Pressure</span>
-                                        <span
-                                            class="py-2 px-3 main--m secondary-website rounded-xl border-cards bg-coral-chip">Predictability</span>
-                                    </div>
+                            </div>
+                            <div class="flex w-full justify-between items-center flex-wrap gap-3">
+                                <h4 class="uppercase secondary-website cardheader semibold">Current variables:</h4>
+                                <div class="flex gap-3 flex-wrap">
+                                    <span
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-blue-chip">Temperature</span>
+                                    <span
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-yellow-chip">Precipitation</span>
+                                    <span
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-green-chip">Wind</span>
+                                    <span
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-red-chip">Sea
+                                        Level Pressure</span>
+                                    <span
+                                        class="py-2 px-3 main secondary-website rounded-xl border-cards bg-coral-chip">Predictability</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </article>
+
             <article>
                 <div class="flex gap-6 max-sm:flex-wrap">
                     <div class="p-4 flex flex-col gap-4 bg-white shadow-stroke rounded-2xl lg:p-8">
@@ -257,67 +381,90 @@
                     </div>
                 </div>
             </article>
-            <article>
-                <h2 class="header-1 dark-blue">Our Premium Weather API has unmatched precision</h2>
+
+            <article class="flex flex-col gap-4 sm:gap-6 lg:gap-8">
+                <h2 class="header dark-blue">Our Premium Weather API has unmatched precision</h2>
                 <div class="flex flex-col gap-6">
-                    <div class="flex gap-6">
-                        <div class="p-6 bg-white border-cards rounded-2xl">
-                            <div class="w-full mb-8 h-[248px] rounded-2xl bg"></div>
-                            <h3 class="header-3 dark-blue pb-6">Weather API</h3>
-                            <p class="main--l secondary-website pb-10">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing
-                                elit.
-                            </p>
-                            <a class="main--l secondary-website">Learn more</a>
+                    <div class="flex gap-6 max-sm:flex-col">
+                        <div class="p-6 bg-white border-cards rounded-2xl flex flex-col gap-6 sm:gap-8">
+                            <div class="w-full h-[248px] rounded-2xl bg"></div>
+                            <div class="flex flex-col gap-4">
+                                <h3 class="subheader dark-blue">Weather API</h3>
+                                <p class="main secondary-website">Stay ahead with hyper-local weather forecasts tailored
+                                    to your solar plant’s location, ensuring optimal operational planning.
+                                </p>
+                            </div>
+                            <a class="flex main secondary-website items-center">Learn more
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </a>
                         </div>
-                        <div class="p-6 bg-white border-cards rounded-2xl">
-                            <div class="w-full mb-8 h-[248px] rounded-2xl bg"></div>
-                            <h3 class="header-3 dark-blue pb-6">Climate assessment</h3>
-                            <p class="main--l secondary-website pb-10">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing
-                                elit.
-                            </p>
-                            <a class="main--l secondary-website">Learn more</a>
+                        <div class="p-6 bg-white border-cards rounded-2xl flex flex-col gap-6 sm:gap-8">
+                            <div class="w-full h-[248px] rounded-2xl bg"></div>
+                            <div class="flex flex-col gap-4">
+                                <h3 class="subheader dark-blue">Climate assessment</h3>
+                                <p class="main secondary-website">Stay ahead with hyper-local weather forecasts tailored
+                                    to your solar plant’s location, ensuring optimal operational planning.
+                                </p>
+                            </div>
+                            <a class="flex main secondary-website items-center">Learn more
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </a>
                         </div>
                     </div>
-                    <div class="flex gap-6">
-                        <div class="p-6 bg-white border-cards rounded-2xl">
-                            <div class="w-full mb-8 h-[248px] rounded-2xl bg"></div>
-                            <h3 class="header-3 dark-blue pb-6">High Precision Weather Maps</h3>
-                            <p class="main--l secondary-website pb-10">Lorem ipsum dolor sit amet, consectetur
-                                adipiscing
-                                elit.
-                            </p>
-                            <a class="main--l secondary-website">Learn more</a>
+                    <div class="flex gap-6 max-sm:flex-col">
+                        <div class="p-6 bg-white border-cards rounded-2xl flex flex-col gap-6 sm:gap-8">
+                            <div class="w-full h-[248px] rounded-2xl bg"></div>
+                            <div class="flex flex-col gap-4">
+                                <h3 class="subheader dark-blue">High Precision Weather Maps</h3>
+                                <p class="main secondary-website">Stay ahead with hyper-local weather forecasts tailored
+                                    to your solar plant’s location, ensuring optimal operational planning.
+                                </p>
+                            </div>
+                            <a class="flex main secondary-website items-center">Learn more
+                                <span class="material-symbols-outlined">chevron_right</span>
+                            </a>
                         </div>
                         <div class="flex flex-col justify-between gap-6">
-                            <div class="p-6 bg-white border-cards rounded-2xl">
-                                <h3 class="header-3 dark-blue pb-6">Enhanced Power Forecasts with your Data</h3>
-                                <p class="main--l secondary-website pb-10">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing
-                                    elit.</p>
-                                <a class="main--l secondary-website">Learn more</a>
+                            <div class="p-6 bg-white border-cards rounded-2xl flex flex-col gap-6 sm:gap-8">
+                                <div class="flex flex-col gap-4">
+                                    <h3 class="subheader dark-blue">Enhanced Power Forecasts with your Data</h3>
+                                    <p class="main secondary-website">Stay ahead with hyper-local weather forecasts
+                                        tailored to your solar plant’s location, ensuring optimal operational planning.
+                                    </p>
+                                </div>
+                                <a class="flex main secondary-website items-center">Learn more
+                                    <span class="material-symbols-outlined">chevron_right</span>
+                                </a>
                             </div>
-                            <div class="p-6 bg-white border-cards rounded-2xl">
-                                <h3 class="header-3 dark-blue pb-6">Predictive Maintenance</h3>
-                                <p class="main--l secondary-website pb-10">Lorem ipsum dolor sit amet, consectetur
-                                    adipiscing
-                                    elit.</p>
-                                <a class="main--l secondary-website">Learn more</a>
+                            <div class="p-6 bg-white border-cards rounded-2xl flex flex-col gap-6 sm:gap-8">
+                                <div class="flex flex-col gap-4">
+                                    <h3 class="subheader dark-blue">Predictive Maintenance</h3>
+                                    <p class="main secondary-website">Stay ahead with hyper-local weather forecasts
+                                        tailored to your solar plant’s location, ensuring optimal operational planning.
+                                    </p>
+                                </div>
+                                <a class="flex main secondary-website items-center">Learn more
+                                    <span class="material-symbols-outlined">chevron_right</span>
+                                </a>
                             </div>
                         </div>
                     </div>
-                    <div class="w-full p-6 bg-white border-cards rounded-2xl">
+                    <div class="w-full p-6 bg-white border-cards rounded-2xl flex flex-col gap-6 sm:gap-8">
                         <div class="w-full mb-8 h-[248px] rounded-2xl bg"></div>
-                        <h3 class="header-3 dark-blue pb-6">Power Forecasting</h3>
-                        <p class="main--l secondary-website pb-10">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit.
-                        </p>
-                        <a class="main--l secondary-website">Learn more</a>
+                        <div class="flex flex-col gap-4">
+                            <h3 class="subheader dark-blue">Power Forecasting</h3>
+                            <p class="main secondary-website">Stay ahead with hyper-local weather forecasts tailored to
+                                your solar plant’s location, ensuring optimal operational planning.
+                            </p>
+                        </div>
+                        <a class="flex main secondary-website items-center">Learn more
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </a>
                     </div>
                 </div>
             </article>
         </section>
+
         <section class="bg-blue-300 py-8 md:py-10 lg:py-20 flex flex-col gap-6 sm:gap-8">
             <p class="secondary-white quote">
                 Solar-Log has relied on meteoblue for many years to&nbsp;make <span class="light-blue semibold">accurate
@@ -338,38 +485,14 @@
                 </div>
             </div>
         </section>
-        <section>
-            <article class="py-20 flex flex-col gap-8 bg">
-                <h1 class="header-1 dark-blue pb-10">Choose from a wide range of ready-to-use meteograms</h1>
-                <!-- <div class="flex gap-6 justify-between pb-8">
-                    <div class="p-8 flex flex-col gap-8 bg-white shadow-stroke rounded-2xl">
-                        <div class="w-full h-[248px] rounded-2xl bg"></div>
-                        <h3 class="header-3 dark-blue">Long heading is what you see here in this feature section</h3>
-                        <p class="main--l secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-                            ornare, eros dolor interdum nulla.</p>
-                        <a class="main--l secondary-website">Learn more</a>
-                    </div>
-                    <div class="p-8 flex flex-col gap-8 bg-white shadow-stroke rounded-2xl">
-                        <div class="w-full h-[248px] rounded-2xl bg"></div>
-                        <h3 class="header-3 dark-blue">Long heading is what you see here in this feature section</h3>
-                        <p class="main--l secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-                            ornare, eros dolor interdum nulla.</p>
-                        <a class="main--l secondary-website">Learn more</a>
-                    </div>
-                    <div class="p-8 flex flex-col gap-8 bg-white shadow-stroke rounded-2xl">
-                        <div class="w-full h-[248px] rounded-2xl bg"></div>
-                        <h3 class="header-3 dark-blue">Long heading is what you see here in this feature section</h3>
-                        <p class="main--l secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-                            ornare, eros dolor interdum nulla.</p>
-                        <a class="main--l secondary-website">Learn more</a>
-                    </div> -->
-                аккордионы
-                </div>
+
+        <section class="bg py-8 flex flex-col gap-8 md:py-10 md:gap-10 lg:py-20 lg:gap-20">
+            <article>
+                <h1 class="header dark-blue pb-10">Choose from a wide range of ready-to-use meteograms</h1>
+                <div class="space-y-4" id="accordion-container"></div>
             </article>
-            <article class="py-8 md:py-10 lg:py-20 flex flex-col gap-8 bg">
+
+            <article class="py-8 md:py-10 lg:py-20 flex flex-col gap-8">
                 <h1 class="header dark-blue pb-10">Success stories</h1>
                 <div class="overflow-hidden relative">
                     <div id="carouselTrackSuccess" class="flex transition-transform duration-500 ease-in-out gap-6">
@@ -481,121 +604,152 @@
             </div>
         </section>
 
-        <section class="bg">
-            <article>
-                <h2 class="header-1 dark-blue">Our Products</h2>
-                <div class="flex gap-6">
-                    <div class="p-6 bg-white border-cards rounded-2xl">
-                        <div class="border-cards bg w-fit mb-16">
-                            <span class="p-4 header-2 material-symbols-outlined dark-blue">weather_snowy</span>
-                        </div>
-                        <h3 class="header-3 dark-blue pb-6">Energy</h3>
-                        <p class="main--l secondary-website pb-10">Lorem ipsum dolor sit amet, consectetur adipiscing
+        <section class="bg py-8 flex flex-col gap-8 md:py-10 md:gap-10 lg:py-20 lg:gap-20">
+            <article class="flex flex-col gap-8">
+                <h2 class="header dark-blue">Our Products</h2>
+                <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"">
+                    <div class=" p-4 lg:p-6 bg-white border-cards rounded-2xl gap-6 md:gap-8 lg:gap-10 flex flex-col">
+                    <div class="border-cards bg w-fit">
+                        <span class="p-4 header-2 material-symbols-outlined dark-blue">weather_snowy</span>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <h3 class="subheader dark-blue">Energy</h3>
+                        <p class="main secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit.
                         </p>
-                        <a class="main--l secondary-website">Learn more</a>
                     </div>
-                    <div class="p-6 bg-white border-cards rounded-2xl">
-                        <div class="border-cards bg w-fit mb-16">
-                            <span class="p-4 header-2 material-symbols-outlined dark-blue">weather_snowy</span>
-                        </div>
-                        <h3 class="header-3 dark-blue pb-6">Agriculture</h3>
-                        <p class="main--l secondary-website pb-10">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit.
-                        </p>
-                        <a class="main--l secondary-website">Learn more</a>
-                    </div>
-                    <div class="p-6 bg-white border-cards rounded-2xl">
-                        <div class="border-cards bg w-fit mb-16">
-                            <span class="p-4 header-2 material-symbols-outlined dark-blue">weather_snowy</span>
-                        </div>
-                        <h3 class="header-3 dark-blue pb-6">Urban Development</h3>
-                        <p class="main--l secondary-website pb-10">Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit.
-                        </p>
-                        <a class="main--l secondary-website">Learn more</a>
-                    </div>
+                    <a class="flex main secondary-website items-center">Learn more
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </a>
                 </div>
-                <div class="flex gap-6">
-                    <div class="p-6 bg-white border-cards rounded-2xl">
-                        <div class="border-cards bg w-fit mb-16">
-                            <span class="p-4 header-2 material-symbols-outlined dark-blue">weather_snowy</span>
-                        </div>
-                        <h3 class="header-3 dark-blue pb-6">Energy</h3>
-                        <p class="main--l secondary-website pb-10">Lorem ipsum dolor sit amet, consectetur adipiscing
+                <div class="p-4 lg:p-6 bg-white border-cards rounded-2xl gap-6 md:gap-8 lg:gap-10 flex flex-col">
+                    <div class="border-cards bg w-fit">
+                        <span class="p-4 header-2 material-symbols-outlined dark-blue">weather_snowy</span>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <h3 class="subheader dark-blue">Agriculture</h3>
+                        <p class="main secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit.
                         </p>
-                        <a class="main--l secondary-website">Learn more</a>
                     </div>
-                    <div class="p-6 bg-white border-cards rounded-2xl">
-                        <div class="border-cards bg w-fit mb-16">
-                            <span class="p-4 header-2 material-symbols-outlined dark-blue">weather_snowy</span>
-                        </div>
-                        <h3 class="header-3 dark-blue pb-6">Agriculture</h3>
-                        <p class="main--l secondary-website pb-10">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    <a class="flex main secondary-website items-center">Learn more
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </a>
+                </div>
+                <div class="p-4 lg:p-6 bg-white border-cards rounded-2xl gap-6 md:gap-8 lg:gap-10 flex flex-col">
+                    <div class="border-cards bg w-fit">
+                        <span class="p-4 header-2 material-symbols-outlined dark-blue">weather_snowy</span>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <h3 class="subheader dark-blue">Urban Development</h3>
+                        <p class="main secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit.
                         </p>
-                        <a class="main--l secondary-website">Learn more</a>
                     </div>
-                    <div class="p-6 bg-white border-cards rounded-2xl">
-                        <div class="border-cards bg w-fit mb-16">
-                            <span class="p-4 header-2 material-symbols-outlined dark-blue">weather_snowy</span>
-                        </div>
-                        <h3 class="header-3 dark-blue pb-6">Urban Development</h3>
-                        <p class="main--l secondary-website pb-10">Lorem ipsum dolor sit amet, consectetur adipiscing
+                    <a class="flex main secondary-website items-center">Learn more
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </a>
+                </div>
+                <div class="p-4 lg:p-6 bg-white border-cards rounded-2xl gap-6 md:gap-8 lg:gap-10 flex flex-col">
+                    <div class="border-cards bg w-fit">
+                        <span class="p-4 header-2 material-symbols-outlined dark-blue">weather_snowy</span>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <h3 class="subheader dark-blue">Energy</h3>
+                        <p class="main secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit.
                         </p>
-                        <a class="main--l secondary-website">Learn more</a>
                     </div>
+                    <a class="flex main secondary-website items-center">Learn more
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </a>
+                </div>
+                <div class="p-4 lg:p-6 bg-white border-cards rounded-2xl gap-6 md:gap-8 lg:gap-10 flex flex-col">
+                    <div class="border-cards bg w-fit">
+                        <span class="p-4 header-2 material-symbols-outlined dark-blue">weather_snowy</span>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <h3 class="subheader dark-blue">Agriculture</h3>
+                        <p class="main secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                        </p>
+                    </div>
+                    <a class="flex main secondary-website items-center">Learn more
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </a>
+                </div>
+                <div class="p-4 lg:p-6 bg-white border-cards rounded-2xl gap-6 md:gap-8 lg:gap-10 flex flex-col">
+                    <div class="border-cards bg w-fit">
+                        <span class="p-4 header-2 material-symbols-outlined dark-blue">weather_snowy</span>
+                    </div>
+                    <div class="flex flex-col gap-6">
+                        <h3 class="subheader dark-blue">Urban Development</h3>
+                        <p class="main secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit.
+                        </p>
+                    </div>
+                    <a class="flex main secondary-website items-center">Learn more
+                        <span class="material-symbols-outlined">chevron_right</span>
+                    </a>
+                </div>
                 </div>
             </article>
-            <article>
-                <h2 class="header-1 dark-blue">Forecast API</h2>
-                <p class="main--l secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+            <article class="flex flex-col gap-8">
+                <h2 class="header dark-blue">Forecast API</h2>
+                <p class="main secondary-website">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Suspendisse
                     varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum
                     nulla,
                     ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
                     Nunc
                     ut sem vitae risus tristique posuere.</p>
-                <div class="p-6 bg-white border-cards rounded-2xl flex justify-between">
-                    <div>
-                        <h3 class="header-3 dark-blue">API calls/month</h3>
+                <div class="p-6 bg-white border-cards rounded-2xl flex gap-11 max-sm:flex-wrap">
+                    <div class="flex flex-col gap-6">
+                        <h3 class="subheader dark-blue">API calls/month</h3>
                         <div class="flex flex-col gap-5">
                             <div class="flex gap-1">
                                 <input type="radio">
-                                <label class="main--l secondary-website">50 000</label>
+                                <label class="main secondary-website">50 000</label>
                             </div>
                             <div class="flex gap-1">
                                 <input type="radio">
-                                <label class="main--l secondary-website">200 000</label>
+                                <label class="main secondary-website">200 000</label>
                             </div>
                             <div class="flex gap-1">
                                 <input type="radio">
-                                <label class="main--l secondary-website">500 000</label>
+                                <label class="main secondary-website">500 000</label>
                             </div>
                             <div class="flex gap-1">
                                 <input type="radio">
-                                <label class="main--l secondary-website">Custom</label>
+                                <label class="main secondary-website">Custom</label>
                             </div>
                         </div>
-                        <p class="main--l secondary-website"><span class="header-3 dark-blue">€400</span> per month</p>
+                        <p class="main secondary-website"><span class="subheader dark-blue">€400</span> per month</p>
                     </div>
-                    <div class="border-l border-color-cards h-8 mx-4"></div>
-                    <div>
-                        <h3 class="header-3 dark-blue">Calculate your calls</h3>
-                        <div class="flex flex-col gap-5">
-                            инпут тайп текст
+                    <div class="border-l border-color-cards self-stretch mx-4 max-sm:hidden"></div>
+                    <hr class="block sm:hidden border-t border-color-cards my-6" />
+                    <div class="flex flex-col gap-10">
+                        <h3 class="subheader dark-blue">Calculate your calls</h3>
+                        <div class="flex flex-wrap gap-x-10 gap-y-8">
+                            <input type="email" placeholder="Stations"
+                                class="main px-4 py-3 border-cards rounded-xl w-[357px] max-sm:w-[295px]">
+                            <input type="email" placeholder="Parameter 2"
+                                class="main px-4 py-3 border-cards rounded-xl w-[357px] max-sm:w-[295px]">
+                            <input type="email" placeholder="Parameter 3"
+                                class="main px-4 py-3 border-cards rounded-xl w-[357px] max-sm:w-[295px]">
                         </div>
-                        <p class="main--l secondary-website"><span class="header-2 dark-blue">€400</span> per month</p>
-                        <a class="bg-blue-300 white py-4 px-6 rounded-xl main--l w-fit">Free Trial Signup</a>
+                        <p class="main secondary-website"><span class="quote dark-blue">€400</span> per month</p>
+                        <a class="bg-blue-300 white py-4 px-6 rounded-xl main w-fit">Free Trial Signup</a>
                     </div>
                 </div>
             </article>
-            <article>
-                <h2 class="header-1 dark-blue">FAQ</h2>
-                аккордионы
+
+            <article class="flex flex-col gap-8">
+                <h2 class="header dark-blue">FAQ</h2>
+                <div class="space-y-4" id="faq-accordion"></div>
             </article>
+
         </section>
         <footer class="bg py-10">
             <img src="assets/meteoblue.svg" alt="Logo">
