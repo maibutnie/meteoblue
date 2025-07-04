@@ -227,6 +227,10 @@ a {
     background-color: var(--coral-chip);
 }
 
+.bg-y-100 {
+    background-color: var(--yellow-100);
+}
+
 /* Shadows */
 .shadow-stroke {
     box-shadow: var(--shadow-stroke);
